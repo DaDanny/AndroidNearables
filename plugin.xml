@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+	<plugin id="cordova-plugin-androidnearables"
+			version="0.0.1"
+			xmlns="http://apache.org/cordova/ns/plugins/1.0"
+			xmlns:android="http://schemas.android.com/apk/res/android">
+		<engines>
+			<engine name="cordova-android" version=">=3.5.0" />
+			<engine name="cordova" version="&gt;=3.0.0" />
+		</engines>
+
+		<name>AndroidNearables</name>
+		<description>Android Estimote Nearables Cordova Support</description>
+		<keywords>cordova,estimote,nearables,android</keywords>
+		<license>MIT</license>
+		<author>Danny Francken</author>
+
+		<js-module name="AndroidNearables" src="www/AndroidNearables.js">
+			<clobbers target="androidNearables" />
+		</js-module>
+
+		<platform name="android">
+
+			<config-file parent="/*" target="config.xml">
+				<feature name="AndroidNearables">
+					<param name="android-package" value="com.cordova.plugin.AndroidNearables" />
+				</feature>
+			</config-file>
+			<config-file parent="/*" target="AndroidManifest.xml">
+				<uses-permission android:name="android.permission.BLUETOOTH" />
+				<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+			</config-file>
+
+
+			<source-file src="src/android/com/cordova/plugin/AndroidNearables.java" target-dir="src/com/cordova/plugin" />
+			<source-file src="src/android/Estimote/SDK/estimote-sdk.aar" target-dir="libs" framework="true" />
+		</platform>
+	</plugin>
