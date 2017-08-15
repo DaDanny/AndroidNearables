@@ -32,6 +32,8 @@
 
 
 			<source-file src="src/android/com/cordova/plugin/AndroidNearables.java" target-dir="src/com/cordova/plugin" />
-			<source-file src="src/android/Estimote/SDK/estimote-sdk.aar" target-dir="libs" framework="true" />
+			<framework src="com.estimote:sdk:0.10.4@aar" />
+
+
 		</platform>
 	</plugin>

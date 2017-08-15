@@ -1,0 +1,39 @@
+{
+  "name": "androidnearables",
+  "version": "0.0.1",
+  "description": "Android Estimote Nearables Cordova Support",
+  "cordova": {
+    "id": "cordova-plugin-androidnearables",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaDanny/AndroidNearables.git"
+  },
+  "keywords": [
+    "cordova",
+    "estimote",
+    "nearables",
+    "android",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=3.5.0"
+    },
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Danny Francken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaDanny/AndroidNearables/issues"
+  },
+  "homepage": "https://github.com/DaDanny/AndroidNearables#readme"
+}
